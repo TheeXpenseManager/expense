@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/TheeXpenseManager/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/TheeXpenseManager/static/js/main.fa236fa7.chunk.js",
-    "main.js.map": "/TheeXpenseManager/static/js/main.fa236fa7.chunk.js.map",
-    "runtime-main.js": "/TheeXpenseManager/static/js/runtime-main.c14114fb.js",
-    "runtime-main.js.map": "/TheeXpenseManager/static/js/runtime-main.c14114fb.js.map",
-    "static/js/2.86519701.chunk.js": "/TheeXpenseManager/static/js/2.86519701.chunk.js",
-    "static/js/2.86519701.chunk.js.map": "/TheeXpenseManager/static/js/2.86519701.chunk.js.map",
-    "static/js/3.ea70f353.chunk.js": "/TheeXpenseManager/static/js/3.ea70f353.chunk.js",
-    "static/js/3.ea70f353.chunk.js.map": "/TheeXpenseManager/static/js/3.ea70f353.chunk.js.map",
-    "index.html": "/TheeXpenseManager/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/TheeXpenseManager/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.86519701.chunk.js.LICENSE.txt": "/TheeXpenseManager/static/js/2.86519701.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/TheeXpenseManager/static/media/logo.6ce24c58.svg"
+    "main.css": "/expense/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/expense/static/js/main.fa236fa7.chunk.js",
+    "main.js.map": "/expense/static/js/main.fa236fa7.chunk.js.map",
+    "runtime-main.js": "/expense/static/js/runtime-main.1ca772c9.js",
+    "runtime-main.js.map": "/expense/static/js/runtime-main.1ca772c9.js.map",
+    "static/js/2.86519701.chunk.js": "/expense/static/js/2.86519701.chunk.js",
+    "static/js/2.86519701.chunk.js.map": "/expense/static/js/2.86519701.chunk.js.map",
+    "static/js/3.ea70f353.chunk.js": "/expense/static/js/3.ea70f353.chunk.js",
+    "static/js/3.ea70f353.chunk.js.map": "/expense/static/js/3.ea70f353.chunk.js.map",
+    "index.html": "/expense/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/expense/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.86519701.chunk.js.LICENSE.txt": "/expense/static/js/2.86519701.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/expense/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c14114fb.js",
+    "static/js/runtime-main.1ca772c9.js",
     "static/js/2.86519701.chunk.js",
     "static/css/main.8c8b27cf.chunk.css",
     "static/js/main.fa236fa7.chunk.js"
