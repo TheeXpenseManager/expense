@@ -1,6 +1,8 @@
 .LOGO {
   grid-column: 1/2;
   position: relative;
+  margin-left: 80px;
+  margin-top: 100px;
 }
 .SECTION {
   height: 100vh;
@@ -15,12 +17,28 @@
   background-size: cover;
   grid-column: 2/3;
 }
-
-.heading {
-  width: 50px;
-  height: 50px;
-  background-color: brown;
-  position: relative;
-  top: -520px;
-  left: 150px;
+.headings{
+  width: 500px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 80px;
+  color: #075E54 !important;
+}
+.title{
+  font-weight: bolder;
+  font-size: 40px;
+}
+.description{
+  width: 500px;
+  height: 60px;
+  margin-top: -10px;
+  margin-left: 80px;
+  color: #075E54;
+}
+.description-para{
+  font-size: 20px;
+}
+.person-pc{
+  padding-top: 180px;
+  padding-left: 250px;
 }
