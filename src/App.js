@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import History from "./screens/History/History";
 import Landing from "./screens/Landing/Landing";
 import LoginExample from "./screens/Login/Example";
@@ -9,9 +9,11 @@ import SignUp from "./screens/Signup/SignUp";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path="/" exact component={Landing} />
+        <Route path="/" exact>
+          <Landing />
+        </Route>
         <Route path="/History">
           <History />
         </Route>
