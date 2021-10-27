@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import History from "./screens/History/History";
 import Landing from "./screens/Landing/Landing";
