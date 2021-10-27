@@ -27,9 +27,12 @@ function Logo() {
           commodo magna ac at amet, felis congue imperdiet.
         </p>
       </div>
-      <Button variant="contained" color="success">
+      <div  className="button-signup">
+      <a href=""><Button variant="contained" color="success">
         SignUp for Free
-      </Button>
+      </Button></a>
+      </div>
+      <div className="already-have-an-account"><p>Already have an account...<a href="" className="login-text">Log In</a></p></div>
     </section>
   );
 }
