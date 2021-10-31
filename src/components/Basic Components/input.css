@@ -1,0 +1,21 @@
+.input {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 0;
+  padding-left: 6px;
+}
+
+.input-fill {
+  width: 252px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 0 10px 0 36px;
+  font-size: 14px;
+
+  outline: none;
+}

@@ -7,6 +7,7 @@ import LoginExample from "./screens/Login/Example";
 import Login from "./screens/Login/Login";
 import Profile from "./screens/Profile/Profile";
 import SignUp from "./screens/Signup/SignUp";
+import YourInvestment from "./screens/YourInvestment/YourInvestment";
 
 const App = () => {
   return (
@@ -29,6 +30,9 @@ const App = () => {
         </Route>
         <Route path="/LoginExample">
           <LoginExample />
+        </Route>
+        <Route path="/investment">
+          <YourInvestment />
         </Route>
       </Switch>
     </Router>
