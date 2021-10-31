@@ -15,7 +15,7 @@
 
   //   Navbar-logo
   .nav-bar-logo {
-    @include FlexCenter($justify: start, $align: center);
+    @include FlexCenter($justify: flex-start, $align: center);
     width: 40%;
     height: 100%;
     img {
@@ -96,7 +96,7 @@
   //   nav-links-windows
   .nav-bar-links {
     width: 60%;
-    @include FlexCenter($justify: end, $align: center);
+    @include FlexCenter($justify: flex-end, $align: center);
     padding: 0 20px;
     .nav-bar-link-items {
       position: relative;

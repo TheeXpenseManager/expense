@@ -1,0 +1,267 @@
+@import "../../../Styles/variables";
+@import "../../../Styles/mixins";
+
+footer {
+  .footer-top {
+    background-color: $black;
+    @include FlexCenter($justify: space-between, $align: initial);
+    color: $white;
+    height: 50px;
+    padding: 0 20px;
+    .footer-tabs {
+      height: 100%;
+      @include FlexCenter($justify: flex-start, $align: flex-end);
+      .tab-item {
+        position: relative;
+        margin: 0 10px;
+        button {
+          color: $text-light;
+          padding-left: 16px;
+          padding-right: 16px;
+          position: relative;
+          font-size: 16px;
+          font-weight: 400;
+          text-transform: capitalize;
+          border-radius: 4px 4px 0 0;
+        }
+      }
+      .active-tab-item {
+        position: relative;
+        button {
+          color: $white;
+          font-weight: 700;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 2.4px;
+          background-color: $white;
+          border-radius: 4px;
+        }
+      }
+    }
+    .footer-links {
+      align-self: center;
+      button {
+        color: $white;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .footer-body {
+    background-color: $text-medium;
+    padding: 20px 0;
+    .about-us {
+      display: grid;
+      grid-template-columns: 300px auto;
+      .footer-logo {
+        align-self: center;
+        text-align: center;
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+        }
+        .footer-logo-name {
+          font-weight: 700;
+          font-size: 18px;
+          color: $white;
+          margin-top: 6px;
+          letter-spacing: 00.075em;
+        }
+      }
+      .footer-about-description {
+        align-self: center;
+        text-align: justify;
+        color: $white;
+        font-weight: normal;
+        font-size: 18px;
+        padding-right: 50px;
+        letter-spacing: 0.075em;
+      }
+    }
+    .developers {
+      display: grid;
+      padding: 0 50px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+      .developer {
+        text-align: center;
+        .developer-image {
+          img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+          }
+        }
+        .developer-name {
+          font-weight: 400;
+          font-size: 18px;
+          color: $white;
+          margin-top: 6px;
+          letter-spacing: 0.03em;
+        }
+        .developer-links {
+          margin-top: 10px;
+          display: flex;
+          justify-content: center;
+          a {
+            margin: 0 10px;
+            width: 27px;
+            height: 27px;
+            background-color: $white;
+            border-radius: 5px;
+            @include FlexCenter;
+            @include Transition;
+            img {
+              width: 24px;
+              height: 24px;
+            }
+            &:hover {
+              background-color: $text-light;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  footer {
+    .footer-top {
+      height: 45px;
+      .footer-tabs {
+        .tab-item {
+          button {
+            font-size: 14px;
+          }
+        }
+        .active-tab-item {
+          &::after {
+            height: 1.8px;
+          }
+        }
+      }
+      .footer-links {
+        button {
+          font-size: 14px;
+        }
+      }
+    }
+    .footer-body {
+      .about-us {
+        .footer-logo {
+          .footer-logo-name {
+            font-size: 16px;
+          }
+        }
+        .footer-about-description {
+          font-size: 14px;
+        }
+      }
+      .developers {
+        padding: 0 25px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .developer {
+          .developer-name {
+            font-size: 16px;
+          }
+          .developer-links {
+            a {
+              margin: 0 7px;
+              width: 24px;
+              height: 24px;
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (max-width: 650px) {
+  footer {
+    .footer-top {
+      height: 40px;
+      padding: 0 10px;
+      .footer-tabs {
+        .tab-item {
+          margin: 0 7px;
+          button {
+            font-size: 12px;
+            padding-left: 9px;
+            padding-right: 9px;
+          }
+        }
+        .active-tab-item {
+          &::after {
+            height: 1.6px;
+          }
+        }
+      }
+      .footer-links {
+        button {
+          font-size: 12px;
+          height: 100%;
+          .css-i4bv87-MuiSvgIcon-root {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .footer-body {
+      .about-us {
+        grid-template-columns: 1fr;
+        .footer-logo {
+          img {
+            width: 100px;
+            height: 100px;
+          }
+          .footer-logo-name {
+            font-size: 18px;
+            margin-top: 10px;
+          }
+        }
+        .footer-about-description {
+          padding: 10px 15px 0;
+          font-size: 16px;
+        }
+      }
+      .developers {
+        padding: 0;
+        grid-template-columns: 1fr;
+        .developer {
+          padding: 24px 0;
+          .developer-image {
+            img {
+              width: 125px;
+              height: 125px;
+            }
+          }
+          .developer-name {
+            font-size: 21px;
+          }
+          .developer-links {
+            a {
+              margin: 0 12px;
+              width: 27px;
+              height: 27px;
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

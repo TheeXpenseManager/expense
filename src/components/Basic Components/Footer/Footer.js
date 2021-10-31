@@ -1,6 +1,6 @@
 import React from "react";
+import "./footer.scss";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
-import ShareIcon from "@mui/icons-material/Share";
 import Button from "@mui/material/Button";
 
 import Logo from "../../../media/Logo/logo.png";
@@ -11,6 +11,7 @@ const Footer = () => {
 
   const developers = [
     {
+      id: 1,
       name: "Pratik Kumar",
       image: PratikImg,
       github: "https://github.com/Pratik-Kumar-621",
@@ -19,6 +20,7 @@ const Footer = () => {
       gmail: "119cs0030@iiitk.ac.in",
     },
     {
+      id: 2,
       name: "Puneet Priyadarshi",
       image: PratikImg,
       github: "",
@@ -27,6 +29,7 @@ const Footer = () => {
       gmail: "",
     },
     {
+      id: 3,
       name: "Mrinal Sinha",
       image: PratikImg,
       github: "",
@@ -54,18 +57,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-links">
-          <div className="contribute">
-            <Button>
-              <CreditCardIcon />
-              Contribute
-            </Button>
-          </div>
-          <div className="share">
-            <Button>
-              <ShareIcon />
-              Share
-            </Button>
-          </div>
+          <Button>
+            <CreditCardIcon />
+            &nbsp; Contribute
+          </Button>
         </div>
       </div>
       <div className="footer-body">
@@ -76,51 +71,63 @@ const Footer = () => {
               <div className="footer-logo-name">The eXpense Manager</div>
             </div>
             <div className="footer-about-description">
-              The eXpense Manager is a web application that helps you manage
-              your expenses. Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Praesentium culpa neque veniam autem est! Inventore harum
-              quidem facere vitae reprehenderit unde dicta sequi necessitatibus
-              accusamus sunt fugit impedit, magni vel?
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Adipisci, labore facere. Repellat, eos quod error corporis veniam
+              veritatis! Modi fugit natus quis eveniet incidunt repellat nam
+              sunt? Tenetur quo laudantium earum iure doloremque culpa ipsum
+              facilis itaque accusamus id aut nostrum in at non commodi nihil
+              minus quibusdam, nobis ex?
+              <input type="password" placeholder="Enter Password" />
             </div>
           </div>
         )}
         {tab === 1 && (
           <div className="developers">
-            {developers.map((developer) => (
-              <div className="developer">
+            {developers.map((developer, key) => (
+              <div className="developer" key={developer.id}>
                 <div className="developer-image">
-                  <img
-                    src={developer.image}
-                    alt="developer"
-                    style={{
-                      width: "100px",
-                    }}
-                  />
+                  <img src={developer.image} alt="developer" />
                 </div>
                 <div className="developer-name">{developer.name}</div>
                 <div className="developer-links">
-                  <a href={developer.github} target="_blank">
+                  <a
+                    href={developer.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/ios-filled/50/000000/github.png"
                       alt="github"
                     />
                   </a>
 
-                  <a href={developer.linkedin} target="_blank">
+                  <a
+                    href={developer.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/doodle/48/000000/linkedin--v2.png"
                       alt="linkedin"
                     />
                   </a>
 
-                  <a href={developer.instagram} target="_blank">
+                  <a
+                    href={developer.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/doodle/48/000000/inshot.png"
                       alt="instagram"
                     />
                   </a>
 
-                  <a href={`mailto:${developer.gmail}`} target="_blank">
+                  <a
+                    href={`mailto:${developer.gmail}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src="https://img.icons8.com/doodle/48/000000/gmail-new.png"
                       alt="gmail"

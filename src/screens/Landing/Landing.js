@@ -3,6 +3,7 @@ import "./Landing.css";
 import logo from "../../media/Logo/logo.png";
 import image from "../../media/Landing/landing-image.svg";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
@@ -27,12 +28,21 @@ function Logo() {
           commodo magna ac at amet, felis congue imperdiet.
         </p>
       </div>
-      <div  className="button-signup">
-      <a href=""><Button variant="contained" color="success">
-        SignUp for Free
-      </Button></a>
+      <div className="button-signup">
+        <Link to="/signup">
+          <Button variant="contained" color="success">
+            SignUp for Free
+          </Button>
+        </Link>
       </div>
-      <div className="already-have-an-account"><p>Already have an account...<a href="" className="login-text">Log In</a></p></div>
+      <div className="already-have-an-account">
+        <p>
+          Already have an account...
+          <Link to="/login" className="login-text">
+            Log In
+          </Link>
+        </p>
+      </div>
     </section>
   );
 }
