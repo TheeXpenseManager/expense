@@ -77,7 +77,6 @@ const Footer = () => {
               sunt? Tenetur quo laudantium earum iure doloremque culpa ipsum
               facilis itaque accusamus id aut nostrum in at non commodi nihil
               minus quibusdam, nobis ex?
-              <input type="password" placeholder="Enter Password" />
             </div>
           </div>
         )}
