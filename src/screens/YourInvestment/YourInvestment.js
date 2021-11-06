@@ -1,11 +1,27 @@
 import React from "react";
+import AddedInvestment from "./AddedInvestment";
+import NoInvestments from "../../components/TodayInvestment/NoInvestments/NoInvestments";
 
-import InvestmentTable from "../../components/TodayInvestment/Table/InvestmentTable";
+import { investmentDetails } from "../../data/InvestmentDetails";
 
 const YourInvestment = () => {
   return (
-    <div>
-      <InvestmentTable />
+    <div className="investment-body">
+      {investmentDetails
+        .filter((date) => date.date.includes("21/10/2021"))
+        .map((item) => (
+          <>
+            {item.investments.length === 0 ? (
+              <>
+                <NoInvestments />
+              </>
+            ) : (
+              <>
+                <AddedInvestment items={item} />
+              </>
+            )}
+          </>
+        ))}
     </div>
   );
 };

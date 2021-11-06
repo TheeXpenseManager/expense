@@ -1,6 +1,5 @@
 import React from "react";
 import "./InvestmentTable.scss";
-import { investmentDetails } from "../../../data/InvestmentDetails";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -12,9 +11,37 @@ import Button from "@mui/material/Button";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 
-const InvestmentTable = () => {
+const InvestmentTable = ({ details }) => {
+  const [filter, setFilter] = React.useState("All");
+
+  const filterItems = [
+    ...new Set(details.investments.map((item) => item.typeOfInvestment)),
+  ];
+
   return (
     <div>
+      <div className="filter-tabs">
+        <div className="filter-items">
+          <div
+            className="filter-item"
+            onClick={() => {
+              setFilter("All");
+            }}
+          >
+            All
+          </div>
+          {filterItems.map((item) => (
+            <div
+              className="filter-item"
+              onClick={() => {
+                setFilter(item);
+              }}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </div>
       <TableContainer>
         <Table aria-label="simple table">
           <TableHead>
@@ -28,44 +55,50 @@ const InvestmentTable = () => {
           </TableHead>
 
           <TableBody>
-            {investmentDetails
-              .filter((investment) => investment.date === "21/10/2021")
-              .map((details) => {
-                return (
-                  <>
-                    {details.investments.map((investment) => {
-                      return (
-                        <TableRow key={investment.id}>
-                          <TableCell align="left">
-                            {investment.typeOfInvestment}
-                          </TableCell>
-                          <TableCell align="left">
-                            {investment.specify}
-                          </TableCell>
-                          <TableCell align="center">
-                            {investment.time}
-                          </TableCell>
-                          <TableCell align="center">
-                            {investment.amount}
-                          </TableCell>
-                          <TableCell align="center">
-                            <Button>
-                              <EditIcon />
-                            </Button>
-                            <Button color="error">
-                              <DeleteIcon />
-                            </Button>
-                          </TableCell>
-                        </TableRow>
-                      );
-                    })}
+            {filter === "All"
+              ? details.investments.map((investment) => (
+                  <TableRow>
+                    <TableCell align="left">
+                      {investment.typeOfInvestment}
+                    </TableCell>
+                    <TableCell align="left">{investment.specify}</TableCell>
+                    <TableCell align="center">{investment.time}</TableCell>
+                    <TableCell align="center">{investment.amount}</TableCell>
+                    <TableCell align="center">
+                      <Button>
+                        <EditIcon />
+                      </Button>
+                      <Button color="error">
+                        <DeleteIcon />
+                      </Button>
+                    </TableCell>
+                  </TableRow>
+                ))
+              : details.investments
+                  .filter((item) => item.typeOfInvestment === filter)
 
-                    {details.investments.reduce((acc, curr) => {
-                      return acc + parseFloat(curr.amount);
-                    }, 0)}
-                  </>
-                );
-              })}
+                  .map((investment) => {
+                    return (
+                      <TableRow>
+                        <TableCell align="left">
+                          {investment.typeOfInvestment}
+                        </TableCell>
+                        <TableCell align="left">{investment.specify}</TableCell>
+                        <TableCell align="center">{investment.time}</TableCell>
+                        <TableCell align="center">
+                          {investment.amount}
+                        </TableCell>
+                        <TableCell align="center">
+                          <Button>
+                            <EditIcon />
+                          </Button>
+                          <Button color="error">
+                            <DeleteIcon />
+                          </Button>
+                        </TableCell>
+                      </TableRow>
+                    );
+                  })}
           </TableBody>
         </Table>
       </TableContainer>

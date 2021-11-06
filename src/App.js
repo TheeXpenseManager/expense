@@ -16,6 +16,9 @@ const App = () => {
     <Router basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact>
+          <PageStructure children={<YourInvestment />} />
+        </Route>
+        <Route path="/Landing" exact>
           <Landing />
         </Route>
         <Route path="/History">
@@ -33,12 +36,15 @@ const App = () => {
         <Route path="/LoginExample">
           <LoginExample />
         </Route>
+<<<<<<< Updated upstream
         <Route path="/AddInvestment">
           <AddInvestment />
         </Route>
         <Route path="/investment">
           <PageStructure children={<YourInvestment />} />
         </Route>
+=======
+>>>>>>> Stashed changes
       </Switch>
     </Router>
   );

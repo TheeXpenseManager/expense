@@ -22,7 +22,7 @@ const NavBar = () => {
 
         <div className="window-navigation nav-bar-links">
           <NavLink
-            to="/investment"
+            to="/"
             className="nav-bar-link-items"
             activeClassName="active-link-items"
           >
@@ -64,7 +64,7 @@ const NavBar = () => {
             {menu === 2 ? (
               <div className="mobile-nav-links">
                 <NavLink
-                  to="/investment"
+                  to="/"
                   className="mobile-link-items"
                   activeClassName="active-link-items-mobile"
                 >
