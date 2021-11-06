@@ -56,7 +56,7 @@
   grid-template-columns: 1fr 1fr;
 }
 .average-expense-card {
-  height: 240px;
+  height: 290px;
   width: 500px;
   border-radius: 5px;
   grid-column: 1/2;
@@ -141,6 +141,6 @@
   font-size: 18px;
   position: relative;
   left: 768px;
-  top: -50px;
+  top: -30px;
   font-weight: bold;
 }

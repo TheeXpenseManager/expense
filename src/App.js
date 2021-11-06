@@ -9,6 +9,7 @@ import Profile from "./screens/Profile/Profile";
 import SignUp from "./screens/Signup/SignUp";
 import YourInvestment from "./screens/YourInvestment/YourInvestment";
 import PageStructure from "./PageStructure";
+import AddInvestment from "./screens/AddInvestment/AddInvestment";
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         </Route>
         <Route path="/LoginExample">
           <LoginExample />
+        </Route>
+        <Route path="/AddInvestment">
+          <AddInvestment />
         </Route>
         <Route path="/investment">
           <PageStructure children={<YourInvestment />} />
