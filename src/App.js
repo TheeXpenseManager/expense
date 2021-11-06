@@ -36,15 +36,9 @@ const App = () => {
         <Route path="/LoginExample">
           <LoginExample />
         </Route>
-<<<<<<< Updated upstream
-        <Route path="/AddInvestment">
+        <Route path="/add">
           <AddInvestment />
         </Route>
-        <Route path="/investment">
-          <PageStructure children={<YourInvestment />} />
-        </Route>
-=======
->>>>>>> Stashed changes
       </Switch>
     </Router>
   );

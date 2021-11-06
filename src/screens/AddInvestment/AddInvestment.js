@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const AddInvestment = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>Add</h1>
+    </div>
+  );
+};
 
-export default AddInvestment
-
+export default AddInvestment;
