@@ -2,6 +2,7 @@ import React from "react";
 import "./Profile.css";
 import img from "../../media/Profile/profile_icon.jpg";
 import icon from "../../media/Profile/google-icon.jpg"
+import Heading from "../../components/Basic Components/Heading/Heading";
 const Profile = () => {
   return (
     <section className="SECTION">
@@ -31,7 +32,9 @@ const maximum_expense_date="(01/01/2021)";
 function ProfileCard(){
   return(
     <section>
-      <p className="profile-heading"><u>Profile</u></p>
+    <div className="profile-heading">
+      <Heading heading="Profile"/>
+    </div>
     <div className="profile-card">
         <img src={img} alt="" className="profile_icon"></img>
         <p className="name">{user.name}</p>
