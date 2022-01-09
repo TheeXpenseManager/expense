@@ -1,7 +1,8 @@
 .SECTION {
+  height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-columns: 600px auto;
+  grid-template-columns: 1fr 1fr;
 }
 .profile-card {
   height: 400px;
@@ -9,16 +10,14 @@
   border-radius: 5px;
   grid-column: 1/2;
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 250px;
   box-shadow: 1px 1px 10px 1px grey;
   text-align: center;
   align-items: center;
   align-content: center;
 }
 .expense-div {
-  grid-column: 2/3;
-  /* border: 2px solid black; */
-  width: 100%;
+  grid-column: 2/2;
 }
 .profile_icon {
   height: 150px;
@@ -44,8 +43,8 @@
   padding-top: 0px;
 }
 .total-expense-card {
-  height: auto;
-  width: 600px;
+  height: 150px;
+  width: 500px;
   border-radius: 5px;
   grid-column: 1/2;
   margin-top: 55px;
@@ -55,12 +54,10 @@
   align-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 30px;
 }
 .average-expense-card {
-  height: auto;
-  width: 600px;
-  padding: 20px 30px;
+  height: 290px;
+  width: 500px;
   border-radius: 5px;
   grid-column: 1/2;
   margin-top: 20px;
@@ -74,8 +71,8 @@
 .profile-heading {
   font-size: 40px;
   font-weight: bolder;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-left: 245px;
+  margin-top: 80px;
   color: #5c5c5c;
 }
 .connect-to-google {
@@ -83,7 +80,7 @@
   height: 30px;
   border: 2px #5c5c5c solid;
   border-radius: 5px;
-  margin-left: 240px;
+  margin-left: 320px;
   margin-top: 80px;
   text-align: center;
 }
@@ -98,13 +95,13 @@
   top: -5px;
 }
 .total-expenses {
-  width: 100%;
+  width: 250px;
   height: 150px;
   grid-column: 1/2;
   border-right: 2px #e5e5e5 solid;
 }
 .maximum-expenses {
-  width: 100%;
+  width: 250px;
   height: 150px;
   grid-column: 2/2;
 }
@@ -121,32 +118,29 @@
   font-weight: bold;
 }
 .table-1 {
-  width: 100%;
-  text-align: left;
-  
- 
+  width: 250px;
+  height: 240px;
   grid-column: 1/2;
 }
 .table-2 {
-  width: 100%;
- text-align: right;
- 
+  width: 250px;
+  height: 240px;
   grid-column: 2/2;
 }
 .percentage-of-expenses-heading {
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
-  grid-column: 1/-1;
+  margin-top: 70px;
+  margin-left: 50px;
+  position: relative;
+  left: 85px;
+  top: 10px;
 }
 .limit {
   color: #006edd;
   font-size: 18px;
   position: relative;
- grid-column: 2/3;
+  left: 768px;
+  top: -30px;
   font-weight: bold;
-  margin-top: 30px;
- }
-.limit:hover{
-  cursor: pointer;
 }
