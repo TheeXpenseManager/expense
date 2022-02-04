@@ -1,6 +1,6 @@
 .add-investment-main-box{
     width: 400px;
-    height: 600px;
+    height: 450px;
     box-shadow: 1px 1px 10px 1px grey;
     margin: auto;
     padding: auto;
@@ -11,6 +11,8 @@
     font-weight: bold;
     color: #075E54;
     text-align: center;
+    position: relative;
+    top:15px;
 }
 .type-of-investment-text{
     padding-left: 20px;
@@ -34,54 +36,13 @@
     color: #5C5C5C;
     margin-left: 20px;
 }
-.plus-button{
-    box-shadow: 1px 1px 10px 1px grey;
-    border: none;
-    font-weight: bold;
-    font-size: 22px;
-    width: 40px;
-    height: 30px;
-    background-color: white;
-}
-.total-cost-strip{
-    width: 400px;
-    height: 38px;
-   
-    margin-left: 20px;
-}
-.total-rupees-blank{
-    width: 50px;
-    height: 30px;
-    margin-left: 10px;
-    font-size: 20px;
-    box-shadow: 1px 1px 10px 1px grey;
-}
-.minus-button{
-    box-shadow: 1px 1px 10px 1px grey;
-    border: none;
-    font-weight: bold;
-    font-size: 22px;
-    width: 40px;
-    height: 30px;
-    background-color: white;
-    margin-left: 10px;
-}
-.second-plus-button{
-    margin-left: 40px;
-}
-.total-paise-blank{
-    width: 50px;
-    height: 30px;
-    margin-left: 10px;
-    font-size: 20px;
-    box-shadow: 1px 1px 10px 1px grey;
-}
 .add-investment-button{
     width: 350px;
     height: 38px;
     border: none;
     margin-left: 25px;
-    margin-top: 20px;
+    position: relative;
+    top: -130px;
     box-shadow: 1px 1px 10px 1px grey;
     text-align: center;
     color: #075E54;
@@ -91,14 +52,42 @@
     border: 1px #075E54 solid;
     border-radius: 5px;
 }
-.time-picker-div{
-    width: 350px;
-    height: 38px;
-    border: none;
-    margin-left: 25px;
-    margin-top: 20px;
-    box-shadow: 1px 1px 10px 1px grey;
-    border: none;
-    border-radius: 5px;
-    text-align: center;
+.btn-{
+    font-size: 19px;
+    font-weight: bolder;
+    position: relative;
+    top: -82.5px;
+    left: 140px;
+}
+.btn{
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 25px;
+}
+.set-rupees{
+    font-weight: bolder;
+    position: relative;
+    left: 85px;
+    top: -39px;
+}
+.btn-paise{
+    font-size: 20px;
+    font-weight: bolder;
+    position: relative;
+    left: 220px;
+    top: -83px;
+}
+.btn--paise{
+    font-size: 19px;
+    font-weight: bolder;
+    position: relative;
+    top: -165.5px;
+    left: 353px;
+}
+.set-paise{
+    font-weight: bolder;
+    position: relative;
+    left: 305px;
+    top: -124.5px;
 }
